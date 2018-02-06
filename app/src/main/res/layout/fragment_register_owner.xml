@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--toolbat-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarRegisterUser"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--nick name-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Icon-->
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--Text Field-->
+                <EditText
+                    android:inputType="text"
+                    android:hint="Nick Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <!--date-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Icon-->
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--Text Field-->
+                <TextView
+                    android:textSize="18sp"
+                    android:text="6/2/2018"
+                    android:inputType="text"
+                    android:hint="Nick Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <!--weight-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Icon-->
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--Text Field-->
+                <EditText
+                    android:inputType="text"
+                    android:hint="Weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <!--height-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Icon-->
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--Text Field-->
+                <EditText
+                    android:inputType="text"
+                    android:hint="Height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+
+            <!--gender-->
+            <!--Age-->
+
+
+
+        </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+
+
+</LinearLayout>
