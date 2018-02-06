@@ -1,5 +1,6 @@
 package masterung.androidthai.in.th.recordweight.utility;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
@@ -21,5 +22,29 @@ public class MyManager {
 
 
     }   // Constructor
+
+    //    Add Value to userTABLE
+    public long addValueToUserTABLE(String nickNameString,
+                                    String startAppString,
+                                    String weightString,
+                                    String heightString,
+                                    String genderString,
+                                    String ageString) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("NickName",nickNameString );
+        contentValues.put("StartApp",startAppString );
+        contentValues.put("Weight",weightString );
+        contentValues.put("Height",heightString );
+        contentValues.put("Gender",genderString );
+        contentValues.put("Age",ageString );
+
+        return sqLiteDatabase.insert("userTABLE" , null , contentValues);
+
+
+
+
+
+    }
+
 
 }   // Main Class
